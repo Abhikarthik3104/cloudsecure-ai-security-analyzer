@@ -7,6 +7,7 @@ and generates professional security reports
 
 import json
 import os
+import sys
 import datetime
 from groq import Groq
 from dotenv import load_dotenv
@@ -16,6 +17,8 @@ load_dotenv()
 
 # Initialize Groq AI client
 client = Groq(api_key=os.getenv('GROQ_API_KEY'))
+
+
 def load_cloudtrail_logs(filepath):
     """Load CloudTrail log file"""
     print(f"📂 Loading logs from: {filepath}")
@@ -24,6 +27,7 @@ def load_cloudtrail_logs(filepath):
     events = data.get('Records', [])
     print(f"✅ Loaded {len(events)} security events")
     return events
+
 
 def analyze_event_with_ai(event):
     """Use Groq AI to analyze a single security event"""
@@ -61,6 +65,7 @@ CloudTrail Event:
 
     return response.choices[0].message.content
 
+
 def parse_ai_response(response_text):
     """Parse AI response into structured data"""
     lines = response_text.strip().split('\n')
@@ -75,7 +80,6 @@ def parse_ai_response(response_text):
         line = line.strip()
         if line.startswith('SEVERITY:'):
             severity = line.replace('SEVERITY:', '').strip().upper()
-            # Clean up severity - extract just the word
             for sev in ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW', 'INFO']:
                 if sev in severity:
                     result['severity'] = sev
@@ -89,6 +93,7 @@ def parse_ai_response(response_text):
 
     return result
 
+
 def get_severity_color(severity):
     """Get color for severity level"""
     colors = {
@@ -99,6 +104,7 @@ def get_severity_color(severity):
         'INFO':     '#28a745'
     }
     return colors.get(severity.upper(), '#6c757d')
+
 
 def generate_html_report(events, analyses):
     """Generate professional HTML security report"""
@@ -344,6 +350,7 @@ def generate_html_report(events, analyses):
 
     return html
 
+
 def main():
     print("=" * 50)
     print("🔐 CloudSecure AI Security Analyzer")
@@ -356,13 +363,20 @@ def main():
         print("GROQ_API_KEY=gsk_your-key-here")
         return
 
-    # Load logs
-    log_file = "sample_logs/cloudtrail_events.json"
+    # Check if custom log file provided via command line
+    if len(sys.argv) > 2 and sys.argv[1] == '--file':
+        log_file = sys.argv[2]
+        print(f"📂 Using custom log file: {log_file}")
+    else:
+        log_file = "sample_logs/cloudtrail_events.json"
+        print(f"📂 Using sample log file")
 
+    # Check file exists
     if not os.path.exists(log_file):
         print(f"❌ ERROR: Log file not found: {log_file}")
         return
 
+    # Load logs
     events = load_cloudtrail_logs(log_file)
 
     # Analyze each event
@@ -412,6 +426,7 @@ def main():
     print(f"📄 Report: {report_path}")
     print("\n🌐 Open reports/security_report.html in your browser!")
     print("=" * 50)
+
 
 if __name__ == "__main__":
     main()

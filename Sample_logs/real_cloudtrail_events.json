@@ -1,0 +1,674 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T11:09:40Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+        "roleSessionName": "resource-explorer-2"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIARQNL2NJE4M7F3ZGR",
+          "sessionToken": "IQoJb3JpZ2luX2VjEGwaCXVzLWVhc3QtMSJHMEUCIQCAAYzD4MUHmDRuj2uMf+EvvCGmQec7zkjxtCYE53LEAgIgJIsEbfnKDS4fv9C93vtDKHgU6rnrmAxcxtHMEGNbpM4q8gIINBAAGgwxMDM5NzY0MzAxNTMiDNrdAJ1q6ONY0x13USrPAt4WTbBCwJuU3p/ywew+d5arWjQywhA6wABjHzD+mMG9TP8qzAT8Znv9l2Xd0vjll7ppXsIuI1BISAbyvX0kYHVwDD6cNU62SB5ZZf1C6J7V0v4D0TICLxx1vAbFPc054tEIo5IL3wfYUA8QX4xhWLNbLwmye5c4sN9APAZ9gXb91R/Q3i+Xd5fVqlYkO+B7dSPP/szFz4Z7WZ/OwfPH4guJ+B1pH6tyWZ5cOcWCUZl/bd6RkAN41NnYTBMbLWJnmSpeRxpMPPseOwOh3b2yMqQdAcCrKIQi82HWnS5rNx9F9whxUVKsIHee4CBN0EoliZ/7bQXGd9xCVKku1YV4nyRfeBeCGjQzhnv/Wl/cYByFhCG2lX2SFayd0dOfOt4rb0aehGVYL75Q8pLWOUz4EoPkIXoV52uKxC1hwmiHGV/OGjzogyhGplm6LBjcOteoMPT1y8wGOr0Bu0B6EP4qT28CecIU8DM3Zhl4z4V/hgzkrak99ovJP84qYRV4npY5iNGNyvbQ6OIyMycYaWGvSsG79X9xByaxYQQ9V46bReRUu2xxJsuYtQOCX/zg6Wl5DVdmx80vywh+1Typ/ngwqoJohReXi6TkhkHQlhSopdF2qDY6ysL4IADcKv1TdRk3kXLkD3NOvVLC3ChOs2uA8G9WB/TN4ki/dqPP7WE9u4+78g3RFRvkggmaY/yCnr67AbfThQ2P",
+          "expiration": "Feb 16, 2026, 12:09:40 PM"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+          "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        }
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzcxMjQwMTgwNDczOlI6bjFSWlA5VFk="
+      },
+      "requestID": "0a17fb3d-796f-4a20-9251-139606fcf760",
+      "eventID": "e0bde230-a767-398c-9798-ecd9528f0178",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "103976430153",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "sharedEventID": "86156916-41ca-4cf0-8784-61e8e682f582",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+        "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2",
+        "accountId": "103976430153",
+        "accessKeyId": "ASIARQNL2NJE4M7F3ZGR",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROARQNL2NJEW7R566VMN",
+            "arn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+            "accountId": "103976430153",
+            "userName": "AWSServiceRoleForResourceExplorer"
+          },
+          "attributes": {
+            "creationDate": "2026-02-16T11:09:40Z",
+            "mfaAuthenticated": "false"
+          }
+        },
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T11:09:40Z",
+      "eventSource": "glue.amazonaws.com",
+      "eventName": "GetDatabases",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "attributesToGet": [
+          "NAME"
+        ]
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "lakeFormationPrincipal": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+      },
+      "requestID": "2a6c24c9-1077-42d4-a1d0-4e61542f2834",
+      "eventID": "eb6629d3-99ae-491e-b85f-1e9473f9430f",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T11:06:20Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+        "roleSessionName": "resource-explorer-2"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIARQNL2NJEUMOYCA6C",
+          "sessionToken": "IQoJb3JpZ2luX2VjEGwaCXVzLWVhc3QtMSJGMEQCIFVmvC/CP/YB9Yhdq5pC3ZjX3wc96/HqHuMT/6b+1PT9AiB/9F4KNXUwWV6sPjOroSHpYqsNY9zrxVk2hXqq9+l9CyryAgg0EAAaDDEwMzk3NjQzMDE1MyIMaKJu1v4F+UyRJeBiKs8C+5xr1ueLDhcg3cwrOieLHz89Ip237RMhJDlnM9w/RHgbqMqJbIGEsXm+cZvoAeJ8HjPBqzMI2yCKVUViOWLPTqpG1+9CXCQfcSbJKz6mEX3eUFpJ8L2utz4+Fou0D5LFwf/g5b+BIpWOLUGhiF96cVwL4UlaQNiB2RC47F8x4ySB+8S8vklrruhIfS4XQZIxGTX7S7dBTkon8Ksd/G3nKmxPmye8lryOUTHABydk/tmk1Mv394HYknTUuKL6/NJtEfEDCYF/ndzXeh+l/J5zu6Gvh9PGGJHC/SQ+dWTVX8E7DkT8n2bvfcN2HRoN64wwXHGfqYS0lBVCPsIz5Z1u6btumSCtGZ8LaR+xd9AlN5Dm1BkzyzcwYl8K0px9ieW9cNtYoey9fQr/Bp2rGaTU91O8Eul6WG/EMqAWOYvgV5zyl9TrFZqvFGjHnLLXsiIwrPTLzAY6vgESBhV4Yu523T4rHaYTkBZy88z8DcCAHUzvS+vy73JchPaB3N5nggry5P82wAUAMeBZkVDbqb7P2sGvx4tWmWpahGpDOa32Jn98UxOlEAJm6kXp46NDAE1R/z/WGUMT6EqeUinSiBj/lsVdStF1Wd3/HFc+gXJvByReFv+ugJ5kaApcSfjz4MBo08HD4RxW/svCtxRU3vwT/R7isFXeRp5By7Ty4V78ESPC+XJjKYIY+ZpOaqswa9fiQAwb9n/T",
+          "expiration": "Feb 16, 2026, 12:06:20 PM"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+          "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        }
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzcxMjM5OTgwNjE1OlI6emNHbzcyM3I="
+      },
+      "requestID": "df67d000-5705-4c00-b5fb-d895c00a39e8",
+      "eventID": "931640e7-6e4a-3668-9db4-6bbe8e7b333d",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "103976430153",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "sharedEventID": "bbd0d91e-12e4-4868-b99a-446a3ddc487f",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+        "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2",
+        "accountId": "103976430153",
+        "accessKeyId": "ASIARQNL2NJEUMOYCA6C",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROARQNL2NJEW7R566VMN",
+            "arn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+            "accountId": "103976430153",
+            "userName": "AWSServiceRoleForResourceExplorer"
+          },
+          "attributes": {
+            "creationDate": "2026-02-16T11:06:20Z",
+            "mfaAuthenticated": "false"
+          }
+        },
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T11:06:20Z",
+      "eventSource": "cloudcontrolapi.amazonaws.com",
+      "eventName": "ListResources",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "errorCode": "GeneralServiceException",
+      "errorMessage": "AWS::GameLift::Location Handler returned status FAILED: The AWS Access Key Id needs a subscription for the service (Service: GameLift, Status Code: 400, Request ID: 84002266-b8c9-48fd-af1b-f44d90c82c47) (SDK Attempt Count: 1) (HandlerErrorCode: GeneralServiceException, RequestToken: 9f4c9710-05f2-4584-9fc3-b2b9225d5571)",
+      "requestParameters": {
+        "typeName": "AWS::GameLift::Location"
+      },
+      "responseElements": null,
+      "requestID": "ea32b61f-c947-41c7-b181-cc7409843637",
+      "eventID": "e46cfac8-4d7d-419c-a69d-7cc884eae997",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T10:35:17Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+        "roleSessionName": "resource-explorer-2"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIARQNL2NJETX2MKEGD",
+          "sessionToken": "IQoJb3JpZ2luX2VjEGsaCXVzLWVhc3QtMSJIMEYCIQD2SGK3UeHK2Ge/TdfrDuwKtIxfKk2vW4FYnEHlcfPkvAIhAN1Ouz3f06IEaSn0keNXXK2q22ILkT50W35LjUt+lIvfKvICCDQQABoMMTAzOTc2NDMwMTUzIgxLvppWjT/W6VI6T68qzwIH3TFnYemQI+KZPQCOUVxESYp1b3BYU0lno4kJXB7QBNb7IKta9Bf52cGAMOZs/7eSbXs2FeiTw0VAaYiHZAapWiDWn+jpRVg65UjJWctJSTd1go7ocBuRVtklo6SVlGE1MNJXfItjKOo95oncKS3EpM71t9tamOR0xraI+VF2mNBWVXQVrVpnUbYdzL1CTIhhD8IBzzuTOvsQ6PjXWMJ/oy3o5klqVgk9Wwj4HYDhb432e8HIWH7TEMgHz+/HuZHhiw3yjoJ835KqkovRRhvRZIOqcJ9vsV2QzMPVp73j6xlPBes3bu1+HPDhfU2a4akMLC4WG4HxN5eTfW/BPC9D1vyFCXX6Lto4PJ8k5U8W67ESnHV5PjRolVjJSr+n/wwvsvh94Rqbck603bg31iQ/HEMapWBGKBdy9kM+ppL735OrTw5+dpIIDoeI0foTwTDl5cvMBjq8Ac5D4cgv4gz9eQbSluiYzXJB03f9I5xYzb/sD1r2cIwmjgkKhlKqlNz/qQyr6KE+SiOYzhDk4SVmFNGMgAYfHXr3VmlZGAaKxBdvFzG8bfl9PMnuuGPDwhUrwfrte3M2R71sPwJBjyKo/Z5dagYtyJeFqfL67WGwRsYS8JwQk0hgLzooDFwFwVp9Mjfmm6g7shKZTFGKi2AFj5o/o5USfBsJAPyVoKMlxmVx9DHINhBkbr/yov/4QUv2QTS+",
+          "expiration": "Feb 16, 2026, 11:35:17 AM"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+          "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        }
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzcxMjM4MTE3MDkyOlI6ZHpvbXVuUzg="
+      },
+      "requestID": "ed8c042a-5718-4fe1-920a-741bd3ef6c9e",
+      "eventID": "f077fd4d-80bd-3c43-9263-450b053c258d",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "103976430153",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "sharedEventID": "29ce6427-f1b8-47eb-988d-b31c09f7d504",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T10:03:09Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+        "roleSessionName": "resource-explorer-2"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIARQNL2NJEVO43BRI3",
+          "sessionToken": "IQoJb3JpZ2luX2VjEGoaCXVzLWVhc3QtMSJGMEQCIHiBEoEOgViwvday509mddbt81KcvaJjd442mZYtBSRaAiADsky7KgxlRouIOoNSWKO79fbePHxmdLrIDIWzDQiG+CryAggzEAAaDDEwMzk3NjQzMDE1MyIMmnAT6aNvjiubfRvtKs8CTjG6Iy4BEFegU3RKzMuqhMBv+72jv2iAfBgUq4zpE0npe0WTrafoReBDxohar/7DhP3sBRfF0EUbhTh3XCQVCzbY4DSr3NVfppWelOFpWqYsOIE2FFzOE16P8S1vbOsBya8yr+riGkc3L512LB8+0whQItVAll4+jvOaoKSFJN63lFP6Yrlfb6BIhpxT2NkodtR3BymEg8rUQ1nKem9o7ARjUEsgwa3XoECsi2BZDW4pPJjzJ+YH0KHEMBUjP/4WKM5i7w4o0AQdhR6slwl5QL+KKxsYwAD3EEdgWSXW/TOX3y88UW9+SsQvTtlP2shTUpcYFy2YzhQn2J8bEghiPDAU8nO5M+p1l9Xto9YeSzCd8yLJtGw912UMdbfpnf7EBtsgjyqkZDT3jYUhofl3e4ay9ehQAKcTfZ3weya7/1ioMKNHj6ZM3/oHJ+QEj38w3dbLzAY6vgG0Zwgm3Z5OIY9VX6iTFmKHjwfblwrEEPzsDE+hssbentrOQCF73U/D7qVzvVeloUzFvb9hp1xUeAr6eDjkSOvj9xwAgvgMy+Y2p+c+9OI5RsiI33aJL0Sky3jNNUgbzA2CeOJS8M+44S2Nsmc36Op5r1YkXs46QCbADT8QXuN59EPNASl05LUBV6bJMYBjXJI1zDFDjQFyjYaPcVBRTE3Zxdk0AZQZMbkYpB0jF4fu4Ly85v7Ogae9AcUae7N0",
+          "expiration": "Feb 16, 2026, 11:03:09 AM"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+          "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        }
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzcxMjM2MTg5NTM1OlI6eFprNjFJdFE="
+      },
+      "requestID": "47f9800d-ec13-4078-bce1-5fb7e1de8f08",
+      "eventID": "1b416cbb-29e7-3f48-a4b7-b7fedc9ac97d",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "103976430153",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "sharedEventID": "95318caa-14f2-4be3-a57f-fb37997b9088",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T09:52:29Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+        "roleSessionName": "resource-explorer-2"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIARQNL2NJEZFBFYUG5",
+          "sessionToken": "IQoJb3JpZ2luX2VjEGoaCXVzLWVhc3QtMSJHMEUCIGT2EU6p+6o6/Fc0Kqp+mQocjr1DjXa40p6lE+392s+CAiEA3vtFWZ/yGLm9CGZOMORc9S6Pi7FwQYgS7voMKAEoaC0q8gIIMxAAGgwxMDM5NzY0MzAxNTMiDJrciok9xByKdOsIoSrPAo27dA08D/jur8JmZbz3UurogwLpuqFND8AZ57+MRfSMd3xsEMTRbFdroNnOyeV4Tvh2RpXZFBSxr1CpB61MUDoJ6vFO6yipC49q72qA3YzkRfJSEqRVfr6ahAkSlcZpaeHuCY1NWCB78dXBFO/Pd1CVyAWDMo4sLvf3Pyazob6U5HHLgEFNbRjcqMzPKrlT7ceyvMo78ZqLqcvatvuODXSATIZD5NUEQ+8FKCPTP+lXLZzlN0vwZhJkltw+qYN9+BzKitDVHEWYhb0PlBbifr+3MfyAhSx2nHtu69dA1xX9qeNtizzO64dsUfmC4jJdhfXbkji+F0IRr7sUrRMgrO6NhQWv4Px0mqvrCmUrSgisM+3zGA3VEULHmte7AN0DMSANuKNQH4CgKgixUwvTPlb8uQX9PhojCELyUqp+rhRUce/Deaj9oDwKBDYmeAV/MN3Ry8wGOr0BSqBk0idQVMaD5uEo2X2elqD8ToYtH5MG67tWHmRizEuHMgNgruCRG4SFPvpMoYPzfF/8pDbryHTKmrZBjcbAYh0uyeH2VlRLWWTReeLRmQ8Asw/U49zeeMsME/eILumA4gbrbscEkvt/O+Auh2TFQ5Gisp449pF+DAA61f2+icZEqTt0DbaJG6I/e5XUQ6NQfj0E/resF/C4VruKZLpLrIELODoOTN2U5SPsD7N3PT5PUiWn++Vdgw26+2PE",
+          "expiration": "Feb 16, 2026, 10:52:29 AM"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+          "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        }
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzcxMjM1NTQ4OTkxOlI6am03ckpWNHk="
+      },
+      "requestID": "fe71c962-2467-41a9-a199-1c9e65e035cf",
+      "eventID": "1512d179-157a-3386-baf4-90cc7b0aa41e",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "103976430153",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "sharedEventID": "98b89675-3893-475f-a5d4-62e92f6dee6f",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+        "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2",
+        "accountId": "103976430153",
+        "accessKeyId": "ASIARQNL2NJEZFBFYUG5",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROARQNL2NJEW7R566VMN",
+            "arn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+            "accountId": "103976430153",
+            "userName": "AWSServiceRoleForResourceExplorer"
+          },
+          "attributes": {
+            "creationDate": "2026-02-16T09:52:29Z",
+            "mfaAuthenticated": "false"
+          }
+        },
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T09:52:29Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeNetworkInsightsAccessScopeAnalyses",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "DescribeNetworkInsightsAccessScopeAnalysesRequest": {
+          "MaxResults": 100
+        }
+      },
+      "responseElements": null,
+      "requestID": "8ecf2cfb-7ff4-4e9b-9bd7-b141f085849c",
+      "eventID": "58835a4d-a081-4e5f-bf76-80e78f23fad0",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T09:42:10Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+        "roleSessionName": "resource-explorer-2"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIARQNL2NJES2GSUAG2",
+          "sessionToken": "IQoJb3JpZ2luX2VjEGoaCXVzLWVhc3QtMSJHMEUCIQDbul+YDhqg1Ucy7XWqd4bADBOhCrw9j9G9wlvygrt9sgIgSrZ4r6NXsxvwjGfXk1M377UWa1swXhyw21jC4NMLuKoq8gIIMxAAGgwxMDM5NzY0MzAxNTMiDHLqWlhRH05SyFb01CrPAsT4dmqkNI5YJsdbzJHkz/PbQb2rfpxFaCwSs3DHQiNgF0U0NYBkFrkDT3B1Zxwcl+eaDLtFuwGrPgFB4GbMkYOzdxlnEHwD5d6PPrsNdkyHiqsf+MKBwrh70dKaQtDhsE9QIu0EBqLdY8PYmH/tGF2fm3toNddkW4wX09jFz32ZDrkKhPk31m2smhA25TnX24SR/E0Vuvr9plDxkbetGKXPhG0SOJFdKp9/FwUHaWLSq5aPN1+S0lC8Oegs5Cv520fHuLvNimMHHmAPSxCOs+ZwgMikkH+Yd7MkqUJUSTfgaWm3t6ZYix4kK+B+3uTWMYJu+DNchugruLg8SfV/gT1aJz4PXV+eUexDmzCf/DPJ3UIdx+h69zmDF2jz+02KY088CgPJwvj9neFrQTPamhGfBmbuHqjzhph/I6xg2JOtsxEM1goahCYQKWQ5KVZrMPLMy8wGOr0BtZxzktdTG9u+lcDoR1U2NSIy++/ZYeuSa5bc6I/9K4dRsr7byQf+aTHvjOldbwFCsALONjIU10Qag0O7oofqVMYuH5fTTCLuClgt69rWWonRVo3OWebroHlM8uOtN8XCe4GKyqA7Zhnjzk4/7CQlHraVKEQPJigfRRhsgX+R/wry3f4y146pv+FF5UvBil8qOR9YRftBf7Km7vQeaJ+RrXOdVbVehLOhCStTp76Kcr6Icf10FkJhU/vbv1MM",
+          "expiration": "Feb 16, 2026, 10:42:10 AM"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+          "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        }
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzcxMjM0OTMwMTk1OlI6UGpJalpxbzI="
+      },
+      "requestID": "de43bd11-0f86-4558-abda-d0eaf4a8db20",
+      "eventID": "79c22b41-dba0-34fe-8329-3a285e50deb7",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "103976430153",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "sharedEventID": "ad1efb1f-17d8-4eaf-bb63-3f93b9e3f34a",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T09:37:15Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+        "roleSessionName": "resource-explorer-2"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIARQNL2NJEW7UQIKYY",
+          "sessionToken": "IQoJb3JpZ2luX2VjEGoaCXVzLWVhc3QtMSJIMEYCIQDgIrAxTNBMR5tmSfvaMjLMKxGzf1I5K0e9GtZbhpRXSAIhAJp+5EYlMAysjB4hY3uLpYYh8k3I/3YXPLyQ+gsaIzGbKvICCDMQABoMMTAzOTc2NDMwMTUzIgwBgtJHd8P0vuaOonkqzwIjXRrzkK7NWKh6Xm+xVx2J8Oi9Njfil/etTgEy03qqeBIMKfaj464V8ur6ds3pUC/yYlajC/X5WQ3sQsz49WbKtvK1aRPKi8NjFcXXmcfFSkJR/NWIUN4X1SC4rxbMT7Ny0lp8eM6O7LL50lsSVOgtmjfib2WJD+WZPjvXZfpLS4mbTgPyoq2CLI+efY2OiwaByPcs0X6DlIvY+J0kejUBTuLyN8OwntJoeAO1ljOAcZitzWhMzodxp+MOFeM1JSgih3oDiimIvpURlawaWOYdVKR3zqI6MSYvGKG+G8gy5RG9JGhz8OrWo9oitxry2cxysIX/oxseNs3MtoYPQUpdHS2sO8J9UV/+BpCZuCDT3ygh67/CI75d0q17597AvXgm/6s5uFftFCaR9HSQtAiHk877y86UCqeJSWceLuG0KTZDi8UDRIBvupd0VSBufzDLysvMBjq8AQqVz6hgJjnYrObl3Nf+dWGBCDnTU2NVQf8aGvufWC8nXH00c00iuE//1OCll5RdH1Su3OfsOEONLw6eKg1SUyzMzIDx2+X3/46uWOhpxNFrd/xVgKuZcwhIQNn6wshowPo7fqBJt5vXwWkOCxY3uhfWN+DOpKYVMEyEG7bmlCLxQR8+4VPM2GdrdkPbifEhmKI4pckbfkVbGP8uhFNsGWdjMgk01dgtv+O/Ki3N/a/RLqcVy9Vwplb8ZrvV",
+          "expiration": "Feb 16, 2026, 10:37:15 AM"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+          "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        }
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzcxMjM0NjM1MTEyOlI6ZlRocVA0UG4="
+      },
+      "requestID": "144b971b-b59f-4b87-9b68-5a99a1f2570f",
+      "eventID": "28f8c4e5-8bad-3dad-9b87-d6c2b1d3618f",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "103976430153",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "sharedEventID": "28c0ac6b-be6a-45fa-8bd1-318933fda0b4",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.09",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+        "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2",
+        "accountId": "103976430153",
+        "accessKeyId": "ASIARQNL2NJEW7UQIKYY",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROARQNL2NJEW7R566VMN",
+            "arn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+            "accountId": "103976430153",
+            "userName": "AWSServiceRoleForResourceExplorer"
+          },
+          "attributes": {
+            "creationDate": "2026-02-16T09:37:15Z",
+            "mfaAuthenticated": "false"
+          }
+        },
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T09:37:15Z",
+      "eventSource": "outposts.amazonaws.com",
+      "eventName": "ListSites",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "errorCode": "SubscriptionRequiredException",
+      "requestParameters": null,
+      "responseElements": null,
+      "requestID": "bc93619e-b42f-4817-90af-ee4f80ade261",
+      "eventID": "4d20467c-dbf6-4ecf-8e23-4ef90742be17",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+        "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2",
+        "accountId": "103976430153",
+        "accessKeyId": "ASIARQNL2NJEW57DB3WR",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROARQNL2NJEW7R566VMN",
+            "arn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+            "accountId": "103976430153",
+            "userName": "AWSServiceRoleForResourceExplorer"
+          },
+          "webIdFederationData": {},
+          "attributes": {
+            "creationDate": "2026-02-16T09:16:38Z",
+            "mfaAuthenticated": "false"
+          }
+        },
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T09:16:38Z",
+      "eventSource": "codestar-connections.amazonaws.com",
+      "eventName": "ListConnections",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "maxResults": 50
+      },
+      "responseElements": null,
+      "requestID": "2f7a6b6b-ba7c-4ef4-9085-b3c3719b9fa8",
+      "eventID": "435eb730-98a1-4bb6-bd74-75ca946c9e7c",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T09:16:38Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+        "roleSessionName": "resource-explorer-2"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIARQNL2NJEW57DB3WR",
+          "sessionToken": "IQoJb3JpZ2luX2VjEGoaCXVzLWVhc3QtMSJIMEYCIQC2xgh5ZG7paTiTWxAOMJ8QYiXnfvsnYbTc8uKr4FlQpgIhAIeGgehOBUjpgivD1eBd5wPRlly2F6pMOIMOXv3c/ee0KvICCDIQABoMMTAzOTc2NDMwMTUzIgzwgGxfCRX8vNZp19wqzwKjEpZ3qkDHHdifPpd4U15QUuK+DXVJFY+QmdAigUJw1jrdTNRvKEVnaQa7ohfGRpdlhwsZO9LcBl76f8aodb0y3THZTRnSYD6SyCuGju/wgkpMJmL7MNXLDlHaTohRQMgtd6e5ccM9dM5BThS923NJYVe7FBKdtPkrVTowmNhA++bLH746yh0v7Uq482wzHemZlIvbv1EzIY+US8N7EV6nICxHoMbwU42bLJBjwER/EhV8QqPq84cmSKK/USc7V+3ioLGFa9EqXDfJ2RKNuFZis1MyM5U2I/s2SbgC+fau7GHw8ToShSPbO0FcU7zpdWy4fwQ5Y/I6LGrBpPDtUO9I658VntEKygngVFX9+ymCP8ySLV7XXN6Wx9LlFjrkUJRAgHZGkIEpRg6XJY5DrlHN/3T4buc5IrIbdgguhtnXkmKjwgoFxf7r/5FRhHdlzjD2wMvMBjq8AcV+f956wNuVJ7ucY6HUxBTiaYgURXnnRAoSCadBoYBsZT/9QOnKdbNaXUkM4RGu6pCszBrMa/LLQIwqUt8X6fy+xykbckd66joWBZ16Tw3JWXyDfEePhvV7HcZQZGr/KG+m8H7vMIvwM/kyJUhId00LbsIP3pmcJq1ojEVZ9vvoqJB/opWOHNxxMx4Hk8G0MnwUqrfY8rZPczCI9CS5AWgj3SFElZAKkgrvAApEDbvebQhz5GRQ32hMjdda",
+          "expiration": "Feb 16, 2026, 10:16:38 AM"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+          "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        }
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzcxMjMzMzk4NTU2OlI6ZzhwTElpV0E="
+      },
+      "requestID": "263273cc-560e-4bd5-a9ae-df951ae9ceeb",
+      "eventID": "c0007981-341c-3327-9e38-5285327cc12d",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "103976430153",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "sharedEventID": "17152693-6101-4a1e-a2fc-808d4484fc2d",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.11",
+      "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T08:58:09Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+        "roleSessionName": "resource-explorer-2"
+      },
+      "responseElements": {
+        "credentials": {
+          "accessKeyId": "ASIARQNL2NJEQ5YK23NN",
+          "sessionToken": "IQoJb3JpZ2luX2VjEGkaCXVzLWVhc3QtMSJHMEUCIQD6bcgIc6wvxgpMWfZBH/JsW6Xo1fGxSsRtNXjBYr3iZwIgNF7ED9EC7fNrX9nOIhR+jhqC0ATDOlCq0b7qdRp9anEq8gIIMhAAGgwxMDM5NzY0MzAxNTMiDO/YvfChPUhEzUTFairPAqw1XJ4pceCD7Yody9+c1otg7TiJIeVF1urXrcTSEfkeJRcvvITewa174iQVQ2CjjBJ8RQgwpwwFeWGMhUB9jHvVHiHoepx1TANBnrsvHIhB0FFi7td1IoTzuVJCB41uZEgs8NxF/oGrsNE+dGDCMGzKm38S1lmamSOLNpH2lpNdCGG3OTFXrGC6hCsFccSwcxTuDRqKYiHxyYaGfH8BsjDV7A8CAisD3WyXwhDEtYU3eoXqU0mkiC9tPYXIB72VIDJn3QEnm8SOMQJDnCMTq5Php+rIdeMITT0BNuFp45GbMRCKVG7q3aEynF62r56EdkCb5kq98MddjbnlfcAoT/Rex8kv2SQsBdTdWo7nG8Bd3X/QuuytACATIP6aMuKAQSzbSck3ZqaWFQA8BoaWGP2psFsgj8059rvZ3MMW3zVu+/BsYhZPl04lAEgoXHVhMKG4y8wGOr0Bw7Ygd6eZGwGSeytYDopyhZInY+APW8j7csA87CY7OObgzuzYhgNRGt4mWp1ZyIZbaM1JnFhBZErxdHfNsX0ko1WqzoxqETRnzMc6mExMnTeUU5E5n/ATmdr7bXRy7SNJByJFiB9Wav2+GE5gG5GoS8e4989w01zTTspuiUfZibFkIm+bbdogro+LigmvEAxCRCqBxHwf1qHHo3a0PEiDMixNtzFZk7Eg11+5c777DLaLX8oBos6hzAjnY8Z3",
+          "expiration": "Feb 16, 2026, 9:58:09 AM"
+        },
+        "assumedRoleUser": {
+          "assumedRoleId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+          "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        }
+      },
+      "additionalEventData": {
+        "ExtendedRequestId": "MTp1cy1lYXN0LTE6UzoxNzcxMjMyMjg5MTk5OlI6Y0dOVW9NenI="
+      },
+      "requestID": "fb2ee77b-dcce-4667-8118-a892c02124c5",
+      "eventID": "6d89a4cf-df63-3d0f-8526-a84759147fc2",
+      "readOnly": true,
+      "resources": [
+        {
+          "accountId": "103976430153",
+          "type": "AWS::IAM::Role",
+          "ARN": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "sharedEventID": "629a7d96-163e-4f2d-9525-ffefcb479e03",
+      "eventCategory": "Management"
+    },
+    {
+      "eventVersion": "1.09",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROARQNL2NJEW7R566VMN:resource-explorer-2",
+        "arn": "arn:aws:sts::103976430153:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2",
+        "accountId": "103976430153",
+        "accessKeyId": "ASIARQNL2NJEQ5YK23NN",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROARQNL2NJEW7R566VMN",
+            "arn": "arn:aws:iam::103976430153:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+            "accountId": "103976430153",
+            "userName": "AWSServiceRoleForResourceExplorer"
+          },
+          "attributes": {
+            "creationDate": "2026-02-16T08:58:09Z",
+            "mfaAuthenticated": "false"
+          }
+        },
+        "invokedBy": "resource-explorer-2.amazonaws.com"
+      },
+      "eventTime": "2026-02-16T08:58:09Z",
+      "eventSource": "fis.amazonaws.com",
+      "eventName": "ListExperimentTemplates",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "resource-explorer-2.amazonaws.com",
+      "userAgent": "resource-explorer-2.amazonaws.com",
+      "errorCode": "SubscriptionRequiredException",
+      "requestParameters": {
+        "maxResults": "100"
+      },
+      "responseElements": null,
+      "requestID": "a1d9c9dc-a4d5-4765-b30b-65c1d1993908",
+      "eventID": "8a9ce5f8-ff5a-4abb-81df-af3edac00d97",
+      "readOnly": true,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "103976430153",
+      "eventCategory": "Management"
+    }
+  ]
+}
