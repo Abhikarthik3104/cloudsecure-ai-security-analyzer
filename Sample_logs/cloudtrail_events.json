@@ -1,0 +1,118 @@
+{
+  "Records": [
+    {
+      "eventTime": "2026-02-14T08:23:11Z",
+      "eventName": "ConsoleLogin",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "admin-user"
+      },
+      "sourceIPAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 Chrome/120",
+      "responseElements": {
+        "ConsoleLogin": "Success"
+      },
+      "additionalEventData": {
+        "MFAUsed": "Yes"
+      }
+    },
+    {
+      "eventTime": "2026-02-14T08:45:33Z",
+      "eventName": "ConsoleLogin",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "developer-user"
+      },
+      "sourceIPAddress": "45.33.32.156",
+      "userAgent": "Python-urllib/3.9",
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      },
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventTime": "2026-02-14T09:15:44Z",
+      "eventName": "DeleteBucket",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "developer-user"
+      },
+      "sourceIPAddress": "45.33.32.156",
+      "requestParameters": {
+        "bucketName": "production-data-backup"
+      }
+    },
+    {
+      "eventTime": "2026-02-14T09:22:01Z",
+      "eventName": "CreateAccessKey",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "unknown-user"
+      },
+      "sourceIPAddress": "91.108.4.100",
+      "requestParameters": {
+        "userName": "admin-user"
+      }
+    },
+    {
+      "eventTime": "2026-02-14T09:45:12Z",
+      "eventName": "AuthorizeSecurityGroupIngress",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "developer-user"
+      },
+      "sourceIPAddress": "45.33.32.156",
+      "requestParameters": {
+        "groupId": "sg-0abc123def456",
+        "ipPermissions": {
+          "fromPort": 22,
+          "toPort": 22,
+          "cidrIp": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "eventTime": "2026-02-14T10:01:55Z",
+      "eventName": "GetSecretValue",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "developer-user"
+      },
+      "sourceIPAddress": "45.33.32.156",
+      "requestParameters": {
+        "secretId": "prod/database/password"
+      }
+    },
+    {
+      "eventTime": "2026-02-14T10:30:22Z",
+      "eventName": "StopInstances",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "unknown-user"
+      },
+      "sourceIPAddress": "185.220.101.45",
+      "requestParameters": {
+        "instancesSet": {
+          "items": [
+            {"instanceId": "i-0abc123def456789"}
+          ]
+        }
+      }
+    },
+    {
+      "eventTime": "2026-02-14T11:00:00Z",
+      "eventName": "PutBucketPolicy",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "unknown-user"
+      },
+      "sourceIPAddress": "185.220.101.45",
+      "requestParameters": {
+        "bucketName": "production-data-backup",
+        "policy": "{\"Effect\":\"Allow\",\"Principal\":\"*\"}"
+      }
+    }
+  ]
+}
