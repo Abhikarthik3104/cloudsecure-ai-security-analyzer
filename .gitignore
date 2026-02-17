@@ -16,3 +16,5 @@ reports/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+sample_logs/real_cloudtrail_events.json
